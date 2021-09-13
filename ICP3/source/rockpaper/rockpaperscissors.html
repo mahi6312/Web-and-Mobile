@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <!-- link html and css-->
+    <link rel="stylesheet" href="rockpaperscissors.css">
+    <!-- link html and js -->
+    <!--<script type="text/javascript" src="./lib/jquery-3.3.1.min.js"></script>-->
+    <!--<script src="index.js" type="text/javascript"></script>-->
+</head>
+<body>
+<!-- Main container -->
+<div class="main_container">
+    <!-- Header container -->
+    <header class="header_container">
+        <h1 class="game_heading"> <span class="rock_span">Rock</span> - <span class="paper_span">Paper</span>
+            - <span class="sessior_span">Scissors</span></h1>
+    </header>
+
+
+    <!-- game score container -->
+    <div class="score_container">
+        <div class="player_computer_score_container">
+            <h1 class="player_computer_heading"><span class="player_span">Player</span></h1>
+            <h4 class="player_computer_score" id="playerScore"></h4>
+        </div>
+        <div class="player_computer_score_container">
+            <h1 class="player_computer_heading"><span class="computer_span">Computer</span></h1>
+            <h4 class="player_computer_score" id="computerScore"></h4>
+        </div>
+    </div>
+
+    <!-- image container -->
+    <div class="image_container">
+        <h1 class="choose_one_heading">Choose an option</h1>
+        <div class="rock_papers_sessiors_image_container">
+            <div class="image_sub_container">
+                <img class="rock_paper_sessior_image" alt="rock-image" src="https://tse2.mm.bing.net/th?id=OIP.ULC3SdzNCGdJeYEoIOikbgHaHa&pid=Api&P=0&w=300&h=300"/>
+                <button class="rock_paper_sessior_button" id="rockButton">Rock</button>
+            </div>
+            <div class="image_sub_container">
+                <img class="rock_paper_sessior_image" alt="paper-image" src="https://tse4.mm.bing.net/th?id=OIP.o4SK46MwwJInumHyCpbZmgHaHa&pid=Api&P=0&w=300&h=300"/>
+                <button class="rock_paper_sessior_button" id="paperButton">Paper</button>
+            </div>
+            <div class="image_sub_container">
+                <img class="rock_paper_sessior_image" alt="sessior-image" src="https://tse3.mm.bing.net/th?id=OIP.Yq5brfMgrfiaRyAAPDfZDAHaHv&pid=Api&P=0&w=300&h=300"/>
+                <button class="rock_paper_sessior_button" id="sessiorButton">Scissors</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- output container -->
+    <div class="output_container" id="outputTextContainer">
+        <h1 class="output_text"> Computer choose <span class="computer_choice" id="computerChoice"></span> -
+            player choose <span class="player_choice" id="playerChoice"></span>.
+        </h1>
+        <h1 class="winning_status" id="resultText"></h1>
+    </div>
+
+
+</div>
+
+<script src="rockpaperscissors.js"></script>
+</body>
+</html>
